@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primer JavaScript</title>
+</head>
+
+<body>
+  <h1>¡Ejercicio de los .MAP!</h1>
+
+  <script>
+    let edades = [];
+
+    for (let i = 0; i <= 4; i++) {
+      edades.push(prompt(`introduce una edad para posicion ${i}`));
+    }
+    console.log(edades);
+
+   let textoEdades = edades.map(edad => edad >= 18 ? "Mayor" : "Menor");
+    console.log(textoEdades);
+
+
+  </script>
+</body>
+
+</html>
